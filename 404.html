@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>404 錯誤!</title>
+  <title>404 錯誤</title>
+  <script>
+    // 將網頁重新導向到指定頁面
+    function redirectToCustomPage() {
+      window.location.href = "/custom-page.html"; // 將這裡的 /custom-page.html 替換為你希望導向的頁面
+    }
+
+    // 在網頁載入完成後，檢查網頁狀態碼，若為 404 或 405 則自動導向
+    window.onload = function() {
+      if (window.location.pathname === '/404.html' && (window.location.search.indexOf('status=404') !== -1 || window.location.search.indexOf('status=405') !== -1)) {
+        redirectToCustomPage();
+      }
+    }
+  </script>
 </head>
 <body>
   <h1>抱歉，找不到頁面</h1>
