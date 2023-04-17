@@ -159,48 +159,46 @@ $(document).ready(function() {
 
 				<!-- Footer -->
 					<section id="footer">
-						<div class="inner">
-							<h2 class="major">聯繫</h2>
-							<p>可以傳送問題 讓我幫您解決吧!-</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">名稱</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">信箱</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">訊息</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="傳送訊息" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									個人網站<br />
-									Discord: ViTa#9294<br />
-								</li>
-								<li class="icon solid fa-phone">(886) 不公開</li>
-								<li class="icon solid fa-envelope"><a href="#">zxcvbg229@gmail.com</a></li>
-								<!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
-								<!-- <-li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
-								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/weiqi0523_/">前往 Instagram</a></li>
+    <div class="inner">
+        <h2 class="major">聯繫</h2>
+        <p>可以傳送問題 讓我幫您解決吧!-</p>
+        <form method="post" action="send_email.php"> <!-- 將 action 設置為 send_email.php，這是你的 PHP 腳本的 URL -->
+            <div class="fields">
+                <div class="field">
+                    <label for="name">名稱</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="field">
+                    <label for="email">信箱</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="field">
+                    <label for="message">訊息</label>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="傳送訊息" /></li>
+            </ul>
+        </form>
+        <ul class="contact">
+            <li class="icon solid fa-home">
+                個人網站<br />
+                Discord: ViTa#9294<br />
+            </li>
+            <li class="icon solid fa-phone">(886) 不公開</li>
+            <li class="icon solid fa-envelope"><a href="#">zxcvbg229@gmail.com</a></li>
+            <!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
+            <!-- <-li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
+            <li class="icon brands fa-instagram"><a href="https://www.instagram.com/weiqi0523_/">前往 Instagram</a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; 月隕星沉 in 2021</li>
+            <li>Discord: <a href="https://discord.gg/TXuu8z5jpB">加入我們的Discord伺服器</a></li>
+        </ul>
+    </div>
+</section>
 
-
-							</ul>
-							<ul class="copyright">
-								<li>&copy; 月隕星沉 in 2021</li>
-								<li>Discord: <a href="https://discord.gg/TXuu8z5jpB">加入我們的Discord伺服器</a></li>
-
-							</ul>
-						</div>
-					</section>
 
 			</div>
 
