@@ -1,10 +1,10 @@
 <?php
-// 获取表单提交的数据
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+// 获取表单提交的数据，并进行验证和过滤
+$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
-// 收件人邮箱
+// 邮件收件人
 $to = 'zxcvbg229@gmail.com'; // 将此处替换为您的实际收件人邮箱
 
 // 邮件主题
